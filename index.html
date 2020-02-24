@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Farvater-Travel</title>
+  </head>
+
+  <body>
+    <!-- ================ -->
+    <!-- ==== header ==== -->
+    <!-- ================ -->
+
+    <header class="header">
+      <!-- header-item-1 -->
+      <div class="header_item">
+        <a class="header_burger" href="#!">
+          <i class="icon icon-burger"></i>
+        </a>
+
+        <a class="header_heart" href="#!">
+          <i class="icon icon-heart"></i>
+          <span class="header_heart-notification"></span>
+        </a>
+
+        <span class="header_online">
+          <i class="icon icon-cards"></i>
+          <span>Бронюй онлайн 24/7</span>
+        </span>
+      </div>
+
+      <!-- header-item-2 -->
+      <div class="header_item">
+        <a class="header_logo">
+          <img src="img/logo.jpg" alt="logo" />
+          <span>онлайн-гіпермаркет турів №1</span>
+        </a>
+      </div>
+
+      <!-- header-item-3 -->
+      <div class="header_item">
+        <a class="header_phone" href="#!">
+          <i class="icon icon-phone"></i>
+        </a>
+
+        <!-- dropdown -->
+        <div class="dropdown">
+          <a class="header_lang" href="#!">
+            <i class="icon icon-planet"></i>
+            <span>Укр</span>
+            <i class="icon icon-arrow"></i>
+          </a>
+
+          <!-- dropdown-content -->
+          <ul class="dropdown-content dropdown-content--lang">
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">Рус</a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">Eng</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- dropdown -->
+        <div class="dropdown">
+          <a class="header_user" href="#!">
+            <img src="img/avatar.jpg" alt="avatar" />
+            <span>Марія-Магдалена</span>
+            <i class="icon icon-arrow"></i>
+          </a>
+
+          <!-- dropdown-content -->
+          <ul class="dropdown-content">
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">Кабінет користувача</a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">Особисті дані</a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">Змінити пароль</a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">
+                <span class="dropdown-content_item-flex">
+                  <span>Замовлені тури</span>
+                  <span class="dropdown_item-value">3</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">
+                <span class="dropdown-content_item-flex">
+                  <span>Обрані</span>
+                  <span class="dropdown_item-value">6</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a class="dropdown-content_link" href="#!">
+                <span class="dropdown-content_item-flex">
+                  <span>Бонусні бали</span>
+                  <span class="dropdown_item-value">192</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="dropdown-content_item">
+              <a
+                class="dropdown-content_link dropdown-content_link-exit"
+                href="#!"
+                >Вийти з аккаунту</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================== -->
+    <!-- ==== tab-list ==== -->
+    <!-- ================== -->
+
+    <div class="container">
+      <ul class="tab-list">
+        <li class="tab-list_item">
+          <a class="tab-list_link" href="#!">Кабінет користувача</a>
+        </li>
+
+        <li class="tab-list_item">
+          <a class="tab-list_link" href="#!">Особисті дані</a>
+        </li>
+
+        <li class="tab-list_item active">
+          <a class="tab-list_link" href="#!">Замовлені тури</a>
+        </li>
+
+        <li class="tab-list_item">
+          <a class="tab-list_link" href="#!">Обране</a>
+        </li>
+
+        <li class="tab-list_item">
+          <a class="tab-list_link" href="#!">Бонусні бали</a>
+        </li>
+
+        <li class="tab-list_item">
+          <a class="tab-list_link" href="#!">Поштова розсилка</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ================== -->
+    <!-- ==== switcher ==== -->
+    <!-- ================== -->
+
+    <div class="switcher">
+      <div class="container">
+        <h2 class="switcher_title">Замовлені тури</h2>
+
+        <ul class="switcher_menu">
+          <li class="switcher_menu-item">
+            <a class="switcher_menu-link" href="#!">Оплачені</a>
+          </li>
+
+          <li class="switcher_menu-item active">
+            <a class="switcher_menu-link" href="#!">Не оплачені</a>
+          </li>
+
+          <li class="switcher_menu-item">
+            <a class="switcher_menu-link" href="#!">Скасовані</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= -->
+    <!-- ==== payment ==== -->
+    <!-- ================= -->
+
+    <div class="payment">
+      <div class="container">
+        <h3 class="payment_title">Очікується оплата 2 турів</h3>
+
+        <div class="payment_flex-container">
+          <!-- card-list -->
+          <div class="card-list">
+            <!-- card -->
+            <div class="card">
+              <div class="card_container">
+                <p class="card_title">
+                  № 0150-09112001 від 24 грудня 2017
+                </p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <!-- card_container -->
+              <div class="card_container">
+                <p class="card_hotel-name">
+                  Sefikbey City (Ex. Sinbad Hotel)
+                </p>
+
+                <div class="card_hotel-info">
+                  <p class="card_hotel-location">
+                    Турция, Кемер, Бельбиди
+                  </p>
+
+                  <div class="card_hotel-stars">
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star.png" alt="star" />
+                  </div>
+                </div>
+
+                <div class="card_permit">
+                  <div class="card_permit-duration">
+                    <img src="img/user-icon.png" alt="user-icon" />
+                    <p>2 туриста, на 7 ночей</p>
+                  </div>
+
+                  <div class="card_permit-departure">
+                    <img src="img/airplane.png" alt="airplane" />
+                    <p>Виліт 24.12</p>
+                  </div>
+                </div>
+
+                <div class="card_price">
+                  <p class="card_price-value">
+                    35 073 грн
+                    <span class="card_price-value--dol">($1 299)</span>
+                  </p>
+
+                  <p class="card_price-status">Очікується оплата</p>
+                </div>
+
+                <p class="card_days">
+                  Квитки і віза з'являться за 2 дні до вильоту
+                </p>
+              </div>
+              <!-- /card_container -->
+            </div>
+
+            <!-- card -->
+            <div class="card active">
+              <div class="card_container">
+                <p class="card_title">
+                  № 0150-09112001 від 12 грудня 2017
+                </p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <!-- card_container -->
+              <div class="card_container">
+                <p class="card_hotel-name">
+                  Tropical Paradise Flower in the Sand
+                </p>
+
+                <div class="card_hotel-info">
+                  <p class="card_hotel-location">
+                    Турция, Кемер, Бельбиди
+                  </p>
+
+                  <div class="card_hotel-stars">
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star-orange.png" alt="star-orange" />
+                    <img src="img/star.png" alt="star" />
+                  </div>
+                </div>
+
+                <div class="card_permit">
+                  <div class="card_permit-duration">
+                    <img src="img/user-icon.png" alt="user-icon" />
+                    <p>2 туриста, на 7 ночей</p>
+                  </div>
+
+                  <div class="card_permit-departure">
+                    <img src="img/airplane.png" alt="airplane" />
+                    <p>Виліт 24.12</p>
+                  </div>
+                </div>
+
+                <div class="card_price">
+                  <p class="card_price-value">
+                    35 073 грн
+                    <span class="card_price-value--dol">($1 299)</span>
+                  </p>
+
+                  <p class="card_price-status">Очікується оплата</p>
+                </div>
+
+                <p class="card_days">
+                  Квитки і віза з'являться за 2 дні до вильоту
+                </p>
+              </div>
+              <!-- /card_container -->
+            </div>
+          </div>
+
+          <!-- card-info -->
+
+          <div class="card-info">
+            <div class="card-info_container">
+              <p class="card-info_number">№ 0150-09112001 від 24 грудня 2017</p>
+            </div>
+
+            <div class="horizont-line"></div>
+
+            <!-- card-info_container -->
+            <div class="card-info_container">
+              <h3 class="card-info_name">
+                Tropical Paradise Flower in the Sand
+              </h3>
+
+              <div class="card-info_hotel">
+                <p class="card-info_hotel-location">
+                  Турция, Кемер, Бельбиди
+                </p>
+
+                <div class="card-info_hotel-stars">
+                  <img src="img/star-orange-big.png" alt="star-orange" />
+                  <img src="img/star-orange-big.png" alt="star-orange" />
+                  <img src="img/star-orange-big.png" alt="star-orange" />
+                  <img src="img/star-orange-big.png" alt="star-orange" />
+                  <img src="img/star-big.png" alt="star-orange" />
+                </div>
+              </div>
+
+              <div class="card-info_describe">
+                <img
+                  class="card-info_describe-image"
+                  src="img/hotel.jpg"
+                  alt="hotel"
+                />
+
+                <ul class="card-info_describe-list">
+                  <li class="card-info_describe-list_item">
+                    <img src="img/1.png" alt="airplane" />
+                    <p>Перелёт включён в тур</p>
+                  </li>
+
+                  <li class="card-info_describe-list_item">
+                    <img src="img/2.png" alt="icon" />
+                    <p>Вылет 24.12</p>
+                    <span>Время</span>
+                  </li>
+
+                  <li class="card-info_describe-list_item">
+                    <img src="img/3.png" alt="icon" />
+                    <p>Перелёт включён в тур</p>
+                  </li>
+
+                  <li class="card-info_describe-list_item">
+                    <img src="img/4.png" alt="icon" />
+                    <p>На 2 ночи</p>
+                  </li>
+
+                  <li class="card-info_describe-list_item">
+                    <img src="img/5.png" alt="icon" />
+                    <p>Двуспальная кровать (DBL)</p>
+                  </li>
+
+                  <li class="card-info_describe-list_item">
+                    <img src="img/6.png" alt="icon" />
+                    <p>Всё включено (AI)</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-info_price">
+                <p class="card-info_price-value">
+                  35 073 грн <span class="card-info_price-dol">($1 299)</span>
+                </p>
+
+                <p class="card-info_price-status">Очікується оплата</p>
+              </div>
+
+              <!-- button-list -->
+              <div class="card-info_button-list">
+                <a class="button-list_pay-online" href="#!">Оплатити онлайн</a>
+
+                <a class="button-list_download" href="#!"
+                  >Завантажити рахунок-фактуру
+                </a>
+
+                <a class="button-list_cancel" href="#!">Анулювати замовлення</a>
+              </div>
+            </div>
+            <!-- /card-info_container -->
+
+            <div class="horizont-line"></div>
+
+            <!-- card-info_container -->
+            <div class="card-info_container">
+              <div class="card-info_menu">
+                <a class="card-info_menu-item active" href="#!">Платежі</a>
+                <a class="card-info_menu-item" href="#!">Документы</a>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_number-date">
+                <p class="number-date_title">Номер та дата замовлення</p>
+                <p class="number-date_value">
+                  № 0150-09112001 від 24 грудня 2017
+                </p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_invoice">
+                <p class="invoice-title">Рахунок-фактура</p>
+
+                <div class="invoice-item active">
+                  <a class="invoice-item_name">
+                    №473 від 06.10.2017 — актуальный
+                  </a>
+
+                  <div class="invoice-item_button-list">
+                    <a href="#!">Завантажити</a>
+                    <a href="#!">Вислати на пошту</a>
+                  </div>
+                </div>
+
+                <div class="invoice-item">
+                  <a class="invoice-item_name">№474 від 05.10.2017</a>
+
+                  <div class="invoice-item_button-list">
+                    <a href="#!">Завантажити</a>
+                    <a href="#!">Вислати на пошту</a>
+                  </div>
+                </div>
+
+                <div class="invoice-item">
+                  <a class="invoice-item_name">№475 від 05.10.2017</a>
+
+                  <div class="invoice-item_button-list">
+                    <a href="#!">Завантажити</a>
+                    <a href="#!">Вислати на пошту</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Сплатити до</p>
+                <p class="card-info_details-value">25 грудня 2017</p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Спосіб оплати</p>
+                <p class="card-info_details-value">Безготівковий розрахунок</p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Вартість туру</p>
+                <p class="card-info_details-value">35 073 грн. ($1 299)</p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Промокод</p>
+                <p class="card-info_details-value">
+                  Активований: BLACK-FRIDAY (1000 грн.)
+                </p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Сума до оплати</p>
+                <p class="card-info_details-value">35 073 грн.</p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <div class="card-info_details">
+                <p class="card-info_details-title">Коштів внесено</p>
+                <p class="card-info_details-value">0 грн.</p>
+              </div>
+
+              <div class="horizont-line"></div>
+
+              <!-- buttons -->
+
+              <div class="card-info_button-list card-info_button-list--summary">
+                <a class="button-list_pay-online" href="#!">Оплатити онлайн</a>
+
+                <a class="button-list_download" href="#!"
+                  >Завантажити рахунок-фактуру
+                </a>
+
+                <span class="button-list_summary"
+                  >Сума до оплати: 35 073 грн.</span
+                >
+              </div>
+            </div>
+            <!-- /card-info_container -->
+          </div>
+          <!-- /card-info -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ================ -->
+    <!-- ==== footer ==== -->
+    <!-- ================ -->
+
+    <footer class="footer">
+      <div class="container">
+        <a class="footer_logo" href="#!">
+          <img src="img/logo.jpg" alt="logo" />
+        </a>
+
+        <!-- footer-row -->
+        <div class="footer-row footer-row--sup">
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Почему мы
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Миссия и ценности</a>
+              </li>
+              <li>
+                <a href="#!">Наши преимущества</a>
+              </li>
+              <li>
+                <a href="#!">Безопасность</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Покупателю
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Как забронировать тур?</a>
+              </li>
+              <li>
+                <a href="#!">Способы оплаты</a>
+              </li>
+              <li>
+                <a href="#!">Советы туристам</a>
+              </li>
+              <li>
+                <a href="#!">Вопросы и ответы</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              FARVATER
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">О компании</a>
+              </li>
+              <li>
+                <a href="#!">Блог</a>
+              </li>
+              <li>
+                <a href="#!">Наша команда</a>
+              </li>
+              <li>
+                <a href="#!">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Акции
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Горящие туры</a>
+              </li>
+              <li>
+                <a href="#!">Рекомендуемые</a>
+              </li>
+              <li>
+                <a href="#!">Ранее бронирование команда</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- socials -->
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Мы в соцсетях
+            </p>
+
+            <ul class="footer-row_item-list--socials">
+              <li>
+                <a href="#!">
+                  <img src="img/social-facebook.png" alt="facebook" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="img/social-instagram.png" alt="instagram" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="img/social-telegram.png" alt="telegram" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="img/social-youtube.png" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Способы оплаты
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!"><img src="img/pay-1.jpg" alt="partners"/></a>
+              </li>
+              <li>
+                <a href="#!"><img src="img/pay-2.jpg" alt="partners"/></a>
+              </li>
+              <li>
+                <a href="#!"><img src="img/pay-3.jpg" alt="partners"/></a>
+              </li>
+              <li>
+                <a href="#!"><img src="img/pay-4.jpg" alt="partners"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer-row -->
+        <div class="footer-row">
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Европа
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Австрия</a>
+              </li>
+              <li>
+                <a href="#!">Азербайджан</a>
+              </li>
+              <li>
+                <a href="#!">Албания</a>
+              </li>
+              <li>
+                <a href="#!">Андорра</a>
+              </li>
+              <li>
+                <a href="#!">Бельгия</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Ближний Восток
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Израиль</a>
+              </li>
+              <li>
+                <a href="#!">Иордания</a>
+              </li>
+              <li>
+                <a href="#!">Катар</a>
+              </li>
+              <li>
+                <a href="#!">Ливан</a>
+              </li>
+              <li>
+                <a href="#!">ОАЭ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Азия
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Бали (Индонезия)</a>
+              </li>
+              <li>
+                <a href="#!">Вьетнам</a>
+              </li>
+              <li>
+                <a href="#!">Гонконг (Китай)</a>
+              </li>
+              <li>
+                <a href="#!">Индия</a>
+              </li>
+              <li>
+                <a href="#!">Индонезия</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Африка
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Египет</a>
+              </li>
+              <li>
+                <a href="#!">Кабо-Верде</a>
+              </li>
+              <li>
+                <a href="#!">Кения</a>
+              </li>
+              <li>
+                <a href="#!">Маврикий</a>
+              </li>
+              <li>
+                <a href="#!">Мадагаскар</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Австралия
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Австралия</a>
+              </li>
+              <li>
+                <a href="#!">Новая Зеландия</a>
+              </li>
+              <li>
+                <a href="#!">Фиджи</a>
+              </li>
+              <li>
+                <a href="#!">Французская Полинезия (Франция)</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-row_item">
+            <p class="footer-row_item-title">
+              Северная Америка
+            </p>
+
+            <ul class="footer-row_item-list">
+              <li>
+                <a href="#!">Канада</a>
+              </li>
+              <li>
+                <a href="#!">США</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer_more -->
+
+        <div class="footer_more">
+          <a href="#!">Все страны</a>
+        </div>
+
+        <p class="footer_footnote">
+          * Оплата тура производится в гривнах
+        </p>
+
+        <p class="footer_copyright">
+          &copy; Фарватер Тревел, 2006
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
